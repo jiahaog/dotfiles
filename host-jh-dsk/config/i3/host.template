@@ -1,0 +1,33 @@
+# i3 config file (v4) - Host config
+
+set $left DP-0
+set $right DP-2
+
+# Configure both monitors in one command or there may be a gap in between them.
+# exec --no-startup-id \
+#   xrandr \
+#     --output $left --rotate left \
+#     --output $right --rotate left --right-of $left
+exec --no-startup-id \
+  xrandr \
+    --output $left \
+    --mode 2560x1440 \
+    --rate 143.86
+
+set $mod Mod1
+set $win mod4
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# Map caps lock to ctrl
+exec --no-startup-id setxkbmap -option ctrl:nocaps

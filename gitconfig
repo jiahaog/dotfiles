@@ -1,0 +1,12 @@
+[alias]
+	a = add
+	s = status
+	co = checkout
+	cm = commit
+[user]
+	name = Jia Hao Goh
+	email = jiahaog@users.noreply.github.com
+[core]
+	excludesfile = ~/.gitignore_global
+[http]
+	cookiefile = ~/.gitcookies

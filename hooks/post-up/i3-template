@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+i3_config_dir="$HOME/.config/i3"
+
+echo 'Generating i3 config from template'
+
+
+cat > "$i3_config_dir/config" << EOL
+# Generated i3 config from dotfiles. Do not edit. 
+# Edit the .template files and run rcup instead to update.
+EOL
+
+# Note that we use the implicit alphabetical ordering to start with base.template
+cat "$i3_config_dir/"*.template >> "$i3_config_dir/config"
