@@ -62,10 +62,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+z split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Shift+z split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -173,6 +173,10 @@ client.focused #4c7899 #285577 #ffffff #FF6D00
 
 
 # Keyboard repeat rate
-exec --no-startup-id xset r rate 200 60	
+exec_always --no-startup-id xset r rate 200 60	
 
 bindsym $mod+Ctrl+l exec i3lock -c 222222
+
+# macOS like copy paste
+bindsym --release $mod+v exec "xdotool type --clearmodifiers --delay 0 -- \\"$(xsel -b -o)\\""
+bindsym --release $mod+c exec "xdotool type --clearmodifiers --delay 0 -- \\"$(xsel | xsel -b -i)\\""
