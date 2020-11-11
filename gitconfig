@@ -10,3 +10,5 @@
 	excludesfile = ~/.gitignore_global
 [http]
 	cookiefile = ~/.gitcookies
+[pull]
+	ff = only
