@@ -1,0 +1,5 @@
+{
+    "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "vim.enableNeovim": true,
+    "files.autoSave": "onFocusChange"
+}
