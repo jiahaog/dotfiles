@@ -14,3 +14,9 @@ EOT
 
 rcup
 ```
+
+## Known Issues
+
+### VSCode
+
+Not using this for sync since rcm has some issues syncing things in the `Application Support` directory (note the space). See https://github.com/thoughtbot/rcm/issues/235.
